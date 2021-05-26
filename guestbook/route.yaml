@@ -4,7 +4,7 @@ metadata:
   name: guestbook
   namespace: guestbook
 spec:
-  host: guestbook.apps.c1.sandbox56.opentlc.com
+  host: guestbook.apps.upi.sandbox449.opentlc.com
     targetPort: 80
   to:
     kind: Service
