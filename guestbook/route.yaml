@@ -4,8 +4,8 @@ metadata:
   name: guestbook
   namespace: guestbook
 spec:
-  host: guestbook.apps.upi.sandbox449.opentlc.com
-    targetPort: 80
+  host: guestbook.apps.upi.sandbox139.opentlc.com
+  targetPort: 80
   to:
     kind: Service
     name: frontend
