@@ -1,0 +1,21 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: snow-create-change-record
+  namespace: guestbook
+  labels:
+    app.kubernetes.io/name: redis-slave
+spec:
+  tower_auth_secret: toweraccess
+  job_template_name: snow-create-change-record
+  extra_vars:
+    app_name: redis-slave
+    change_request:
+      severity: 2
+      priority: 2
+      implementation_plan: "Updated by Red Hat Advanced Cluster Management for OCP"
+      justification: "A new revision was available from the application channel in GitHub."
+      description: "The following resources have been updated: [...]"
+      risk_impact_analysis: "Changes are made automatically based on approved changes in GitHub."
+      test_plan: "Run synthetic validation tests post-deployment."
