@@ -28,6 +28,6 @@ spec:
         - name: GET_HOSTS_FROM
           value: env
         - name: REDIS_MASTER_SERVICE_HOST
-          value: redis-master.guestbook.svc.clusterset.local
+          value: redis-master.default.svc.clusterset.local
         ports:
         - containerPort: 6379
